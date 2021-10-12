@@ -2,6 +2,12 @@
 <html lang="es" dir="ltr">
 <head>
 
+    <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Your Website Title" />
+    <meta property="og:description"   content="Your description" />
+    <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+
     <?php
     require_once ("dependencias.php");
     ?>
@@ -19,7 +25,7 @@
 <header class="">
   <nav class="navbar navbar-expand-md navbar-light bg-light btn-lg">
     <div class="container-fluid">
-      <a class="navbar-brand btn-close-white" href="#"><img title="Ir a Orienteck" src="recursos/img/LogoPortafolio.png" alt="Orienteck"></a>
+      <a class="navbar-brand btn-close-white" href="#"><img title="Perfil portafolio" src="recursos/img/LogoPortafolio.png" alt="Orienteck"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,9 +57,9 @@
 
 
             <a target="_blank" class="me-lg-1 m-3" href="https://wa.me/+18094291545"><img title="WhatsApp" src="recursos/Icon/whatsapp.png" alt="WhatsApp"></a>
-            <a target="_blank" class="me-lg-1 m-3" href="#"><img title="Linkedin" src="recursos/Icon/linkedin-icon-32x32.png" alt="Linkedin"></a>
+            <a target="_blank" class="me-lg-1 m-3" href="https://www.linkedin.com/in/carlos-alberto-loyola-73b31a215/"><img title="Linkedin" src="recursos/Icon/linkedin-icon-32x32.png" alt="Linkedin"></a>
             <a target="_blank" class="me-lg-1 m-3" href="mailto:ca.loyola.tejeda@gmail.com"><img title="Email" src="recursos/Icon/email-icon-32x32.png" alt="Email"></a>
-            <a  class="me-lg-1 m-3" href="#"><img title="FaceBook" src="recursos/Icon/facebook%2032.png" alt="FaceBook"></a>
+            <a target="_blank"  class="me-lg-1 m-3" href="https://www.facebook.com/carlosAlbertoLoyolaTejeda/"><img title="FaceBook" src="recursos/Icon/facebook%2032.png" alt="FaceBook"></a>
           </div>
         </section>
 
@@ -178,7 +184,7 @@
         </header>
         <p class="works-item-client">Para <a href="#" target="_blank">Nuestro Cliente</a> </p>
         <div class="text-center">
-          <a href="#" class="btn-blue" target="_blank">Visitar web</a>
+          <a href="#" class="btn-blue" target="_blank" title="Ir al sitio Web">Visitar web</a>
         </div>
       </div>
     </article>
@@ -195,28 +201,30 @@
         </header>
         <p class="works-item-client">Para <a href="#" target="_blank">Nuestro Cliente</a> </p>
         <div class="text-center">
-          <a href="#" class="btn-blue" target="_blank">Visitar web</a>
+          <a href="#" class="btn-blue" target="_blank" title="Ir al sitio Web">Visitar web</a>
         </div>
       </div>
     </article>
 
-    <!--- Articulo VB Portafolio ----->
-    <article class="works-item">
-      <div class="works-item-img-container" id="Experiencia">
-        <img src="recursos/img-portafolio/logo_visualbasic.png" alt="Trabajo desarrollo de pagina web" class="works-item-img">
-      </div>
-      <div class="works-item-description">
-        <header>
-          <h2 class="works-item-title">Visual Basic</h2>
-        </header>
-        <p class="works-item-client">Para <a href="#" target="_blank">Nuestro Cliente</a> </p>
-        <div class="text-center">
-          <a href="#" class="btn-blue" target="_blank">Visitar web</a>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
+
+      <article class="works-item">
+          <div class="works-item-img-container">
+              <img src="recursos/img-portafolio/Visual-Basic.png" alt="Trabajo desarrollo de pagina web" class="works-item-img">
+          </div>
+          <div class="works-item-description">
+              <header>
+                  <h2 class="works-item-title">Visual Basic</h2>
+              </header>
+              <p class="works-item-client">Para <a href="#" target="_blank">Nuestro Cliente</a> </p>
+              <div class="text-center">
+                  <a href="#" class="btn-blue" target="_blank" title="Ir al sitio Web">Visitar web</a>
+              </div>
+          </div>
+      </article>
+
+
+
+
 
 
 <!--- Seccion de Contacto ----->
@@ -238,7 +246,7 @@
         </div>
 
         <div class="">
-          <input type="email" class="contact-input" id="useremail" name="nombre" value="" required>
+          <input type="email" class="contact-input" id="useremail" name="nombre" value="" required placeholder="Correo electronico">
           <!-- <input type="email" class="contact-input" id="useremail" name="useremail" value="" required> -->
         </div>
       </div>
@@ -248,7 +256,7 @@
           <label for="username">nombre</label>
         </div>
         <div class="">
-          <input type="text" class="contact-input" id="username" name="correo" value="" required>
+          <input type="text" class="contact-input" id="username" name="correo" value="" required placeholder="Escriba su nombre">
           <!-- <input type="text" class="contact-input" id="username" name="username" value="" required> -->
         </div>
       </div>
@@ -261,7 +269,7 @@
         <div class="">
           <label for="usermessage">Mensaje</label>
         </div>
-        <textarea id="usermessage" name="mensaje" rows="3" cols="40" required></textarea>
+        <textarea placeholder="Escriba su mensaje aqui." id="usermessage" name="mensaje" rows="3" cols="40" required></textarea>
         <!-- <textarea id="usermessage" name="usermessage" rows="3" cols="40" required></textarea> -->
       </div>
     </div>
@@ -287,27 +295,31 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-    <!-- bonton de compartir -->
-    <div class="fb-share-button"
-         data-href="https://www.facebook.com/carlosAlbertoLoyolaTejeda/"
-         data-layout="button_count">
-    </div>
 
-    <p class="footer-text">
-      Hecho por <a href="https://play.google.com/store" target="_blank" class="link">Carlos A. Loyola Tejeda</a>
+
+    <p title="Ver perfil" class="footer-text">
+      Hecho por <a href="https://www.facebook.com/carlosAlbertoLoyolaTejeda/" target="_blank" class="link">Carlos A. Loyola Tejeda</a>
     </p>
     <p>
     <address class="footer-text-envoltura">
       ca.loyola.tejeda@gmail.com
     </address>
     </p>
+
+      <!-- bonton de compartir -->
+      <div class="fixed-bottom compartirBoton" style="margin-right: 10px; margin-bottom: 10px">
+      <div class="fb-share-button float-end "
+           data-href="https://www.facebook.com/carlosAlbertoLoyolaTejeda/"
+           data-layout="button_count" >
+      </div>
+      </div>
+
     <p>
-      <small class="Derechos-reservados">Copyright (c) 2018 Copyright Holder All Rights Reserved.</small>
+      <small class="Derechos-reservados">Copyright (&copy;) 2021 Copyright Holder All Rights Reserved.</small>
     </p>
+
   </div>
 </footer>
-
-    <!-- </body> -->
 
 </body>
 

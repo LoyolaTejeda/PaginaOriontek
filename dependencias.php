@@ -5,3 +5,4 @@
 
 
 <script src="librerias/js/bootstrap.js"></script>
+<script src="librerias/jquery-3.2.1.min.js"></script>
