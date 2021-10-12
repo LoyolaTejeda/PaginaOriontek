@@ -15,8 +15,9 @@
                         <a class="nav-link" href="#">Clientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portafolio</a>
+                        <a class="nav-link" target="_blank" href="Portafolio.php">Portafolio</a>
                     </li>
+
                 </ul>
                 <section class="d-flex bg-light">
                     <div class="form-control toast-header justify-content-center">

@@ -67,7 +67,7 @@ margin-bottom: 10px;
 }
 
 .cover{
-  background-image: url('../IMG/portada.png');
+  background-image: url("../recursos/img/work.PNG");
   background-position: center;
   background-size: cover;
 }
