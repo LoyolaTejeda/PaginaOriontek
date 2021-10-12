@@ -1,0 +1,17 @@
+.parrafo{
+    color:  #ffffff;
+    font-size: 20px;
+}
+
+.titulo{
+    color: #fafa17;
+    margin-top: 20px;
+}
+.contenedor{
+    /*width: max-content;*/
+    /*height: 45ch;*/
+    /*margin-bottom: 10px;*/
+    opacity: 65%;
+    background-color: #2c3034;
+    margin-top:50px;
+}
